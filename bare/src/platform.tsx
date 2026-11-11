@@ -1,3 +1,4 @@
+import type { ColorValue } from 'react-native';
 import Ionicons from '@react-native-vector-icons/ionicons';
 import HapticFeedback from 'react-native-haptic-feedback';
 import { version } from '../package.json';
@@ -10,6 +11,6 @@ export function tapFeedback() {
 
 export type TabIconName = 'calculator-outline' | 'time-outline' | 'settings-outline';
 
-export function TabIcon({ name, color, size }: { name: TabIconName; color: string; size: number }) {
+export function TabIcon({ name, color, size }: { name: TabIconName; color: ColorValue; size: number }) {
   return <Ionicons name={name} color={color} size={size} />;
 }

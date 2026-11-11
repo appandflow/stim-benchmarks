@@ -1,6 +1,6 @@
 import { DarkTheme, NavigationContainer } from '@react-navigation/native';
 import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
-import { StatusBar } from 'react-native';
+import { StatusBar, type ColorValue } from 'react-native';
 import { GestureHandlerRootView } from 'react-native-gesture-handler';
 import { SafeAreaProvider } from 'react-native-safe-area-context';
 import { TabIcon, type TabIconName } from './platform';
@@ -17,7 +17,7 @@ const theme = {
 };
 
 function icon(name: TabIconName) {
-  return ({ color, size }: { color: string; size: number }) => <TabIcon name={name} color={color} size={size} />;
+  return ({ color, size }: { color: ColorValue; size: number }) => <TabIcon name={name} color={color} size={size} />;
 }
 
 export default function StimBenchRoot() {

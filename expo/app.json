@@ -1,0 +1,23 @@
+{
+  "expo": {
+    "name": "StimBench",
+    "slug": "stim-bench",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "scheme": "stimbench",
+    "ios": {
+      "supportsTablet": false,
+      "bundleIdentifier": "com.appandflow.stimbench",
+      "config": { "usesNonExemptEncryption": false }
+    },
+    "android": {
+      "package": "com.appandflow.stimbench"
+    },
+    "plugins": [
+      "expo-router",
+      "expo-font",
+      ["expo-splash-screen", { "backgroundColor": "#101418" }]
+    ],
+    "experiments": { "typedRoutes": false }
+  }
+}
