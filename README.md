@@ -72,6 +72,9 @@ its message only in the device log.
 - Exact: Bun 1.4.2 at `~/.bun-1.4.2`, the exact2 checkout at
   `~/.exact/exact2/4756891bc2a0440eadd9a8e3ec67e2a8c04802cf` (`EXACT2`
   overrides it), and Rust 1.97.0 with `aarch64-apple-ios-sim` through rustup.
+  Because `exact.mjs` finds exact2 through the home directory rather than a
+  literal path, Stim builds the Exact app on the machine that runs it and does
+  not offload that build.
 
 Clone this repository on its own (not as a worktree of another repository),
 run `npm ci` in `expo/` and `bare/`, then `bundle install` and
