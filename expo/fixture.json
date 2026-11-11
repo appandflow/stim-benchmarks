@@ -1,0 +1,33 @@
+{
+  "schemaVersion": 1,
+  "kind": "expo",
+  "name": "StimBench",
+  "ios": {
+    "bundleId": "com.appandflow.stimbench",
+    "product": "StimBench",
+    "nativeChange": {
+      "file": "ios/StimBench/SceneDelegate.swift",
+      "anchor": "class SceneDelegate: ExpoAppSceneDelegate {"
+    }
+  },
+  "android": {
+    "applicationId": "com.appandflow.stimbench",
+    "nativeChange": {
+      "file": "android/app/src/main/res/values/strings.xml",
+      "anchor": "<string name=\"app_name\">"
+    }
+  },
+  "rootComponent": {
+    "file": "app/_layout.tsx",
+    "declaration": "export default function StimBenchRoot() {",
+    "name": "StimBenchRoot"
+  },
+  "proof": {
+    "screen": "Settings",
+    "file": "src/screens/SettingsScreen.tsx",
+    "row": "Key haptics",
+    "rowLabel": "key-haptics subtitle",
+    "subtitle": "Vibrate softly on every key press",
+    "editedSubtitle": "Play a light tap on every key press"
+  }
+}

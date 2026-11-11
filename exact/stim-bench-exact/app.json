@@ -1,0 +1,28 @@
+{
+  "$schema": "../../.exact/exact2/4756891bc2a0440eadd9a8e3ec67e2a8c04802cf/scripts/app.schema.json",
+  "name": "Stim Bench Exact",
+  "short_name": "Stim Bench Exact",
+  "id": "dev.stim.bench.exact",
+  "start_url": "/",
+  "display": "standalone",
+  "app": {
+    "id": "dev.stim.bench.exact",
+    "name": "Stim Bench Exact"
+  },
+  "host": {
+    "web": {},
+    "ios": {
+      "minimumOS": "17.0",
+      "deviceFamily": [
+        "iphone",
+        "ipad"
+      ]
+    }
+  },
+  "deploy": {
+    "store": {
+      "web": "0",
+      "ios": "0"
+    }
+  }
+}

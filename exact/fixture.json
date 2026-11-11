@@ -1,0 +1,14 @@
+{
+  "schemaVersion": 1,
+  "framework": "exact",
+  "platform": "ios",
+  "app": "stim-bench-exact",
+  "source": "app.contract",
+  "product": "Stim Bench Exact",
+  "bundleId": "dev.stim.bench.exact",
+  "crash": {
+    "source": "app.ts",
+    "anchor": "    await storage.fs.readFile('app:/data/launch').catch((e) => { if (e.code === 'bake') throw e; });",
+    "language": "typescript"
+  }
+}

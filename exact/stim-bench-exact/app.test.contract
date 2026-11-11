@@ -1,0 +1,7 @@
+test "the revision and count show"
+  expect tree has "revision"
+  expect text "count" == "Count: 0"
+
+test "Increment adds one"
+  tap "increment"
+  expect text "count" == "Count: 1"
